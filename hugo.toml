@@ -71,3 +71,6 @@ url = "/personal/"
 
 
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
