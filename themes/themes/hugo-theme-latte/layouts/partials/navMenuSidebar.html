@@ -1,0 +1,29 @@
+<ul class="nav-menu-sidebar">
+    <li class="dropdown nav-link">
+        <button class="dropbtn">{{ partial "icon.html" "language-solid" }}{{ i18n "languageDropdown" }}</button>
+        <div class="dropdown-content">
+            {{ range $.Site.Home.AllTranslations }}
+            <a class="dropdown-menu-item" aria-label="{{i18n "languageName" (dict "language" .Language.LanguageName)}}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+        </div>
+    </li>
+    <li class="dropdown nav-link">
+        <div><a aria-label="{{ i18n "categoryListAria"}}" href="{{ "/categories/" | relLangURL }}">{{ i18n "categories" }}</a></div>
+        <div class="dropdown-content dropdown-categories">
+            {{ partial "categoryMenu.html" . }}
+        </div>
+    </li>
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.main }}
+    <li class="nav-link">
+    <a class="{{ if $currentPage.IsMenuCurrent " main" . }}active{{ end }}" href="{{ .URL | absLangURL }}"
+        aria-label="{{ .Name }} menu" {{if hasSuffix (.URL | absLangURL) "xml" }} hx-boost="false" {{end}}>
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+    </a>
+    </li>
+    {{ end }}
+    {{ if not .Site.Params.latte.disablesearch }}
+    <li class="nav-link"><a href="{{ relLangURL "search" }}" aria-label="{{i18n "search"}}">{{ partial "icon.html" "search"}}</a></li>
+    {{ end }}
+</ul>

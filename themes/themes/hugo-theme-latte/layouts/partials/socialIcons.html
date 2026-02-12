@@ -1,0 +1,11 @@
+<section aria-label="{{ i18n "socialMediaLinks"}}" class="social-links">
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.social }}
+    <a class="social-link {{ if $currentPage.IsMenuCurrent " main" . }}active{{ end }}" href="{{ .URL | absLangURL }}"
+        aria-label="{{ i18n "socialMediaLink" (dict "name" .Name) }}">
+        {{ if .Pre }}
+        {{ partial "icon.html" .Pre }}
+        {{ end }}
+    </a>
+    {{ end }}
+</section>

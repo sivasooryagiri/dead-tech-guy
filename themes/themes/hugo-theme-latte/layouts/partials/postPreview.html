@@ -1,0 +1,28 @@
+<div class="post-card">
+    {{ if .Params.coverImage }}
+    {{ $path := .Params.coverImage }}
+    {{ $image := .Resources.Get $path }}
+    <div class="cover-image-container">
+        <a class="featured-img-link" aria-label="{{.Params.title}}" href="{{.RelPermalink }}">
+            <!-- Create a responsive image based on srcset and picture tag -->
+            {{ partial "responsiveImage.html" $image }}
+        </a>
+    </div>
+    {{ if .Params.coverImageCredits}}
+    {{ $linkedContent := partial "parse/link" .Params.coverImageCredits }}
+        <span class="credits-text">{{ $linkedContent | safeHTML }}</span>
+    {{ end }}
+    {{ end }}
+    <section class="post-card-metadata">
+        {{ partial "authors.html" . }}
+        {{ partial "categories.html" . }}
+    </section>
+    <div class="post-info">
+        <h2>
+            <a class="post-info-link" aria-label="{{.Params.title}}" href="{{.RelPermalink }}">
+                {{ .Title }}{{ partial "draft.html" . }}
+            </a>
+        </h2>
+    </div>
+    <div class="post-card-summary flexible">{{.Summary | plainify | truncate 120}}</div>
+</div>

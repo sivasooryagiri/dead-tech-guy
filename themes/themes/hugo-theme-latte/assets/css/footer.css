@@ -1,0 +1,37 @@
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: var(--padding-2x);
+    color: var(--main-text);
+    background-color: var(--footer);
+    padding: 4rem var(--padding-1-5rem);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-1x);
+    font-size: var(--small-text);
+}
+
+a.footer-link {
+    color: var(--main-text);
+}
+
+.credits {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--main-text);
+}
+
+a.credits-link,
+a.credits-link:visited {
+    color: var(--secondary-text);
+}
+
+.display-none {
+    display: none;
+}

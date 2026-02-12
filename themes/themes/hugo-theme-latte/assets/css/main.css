@@ -1,0 +1,231 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--padding-3x);
+    justify-content: center;
+    margin-top: var(--margin-3x);
+    /* This needs margin x axis to zero in order for author container's background to work  */
+}
+
+.category-container-title {
+    margin: 0 var(--container-margin);
+    width: 100%;
+}
+
+.cards-container,
+.cards-container-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    gap: var(--padding-3x);
+    margin: 0 var(--container-margin);
+    padding-left: 0;
+}
+
+.site-info-container {
+    max-width: var(--max-char-width);
+}
+
+a.markdown-link {
+    text-decoration: underline solid var(--blue) 3px;
+    /* Applies an underline */
+    text-decoration-color: var(--blue);
+}
+
+
+.page-content-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    padding: 0 var(--container-margin);
+    max-width: var(--max-char-width);
+}
+
+.post-content-container {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 0;
+}
+
+.post-container {
+    max-width: var(--max-char-width);
+}
+
+.right-panel,
+.left-panel {
+    position: relative;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: var(--padding-1x);
+}
+
+.page-content-container h1,
+.post h1 {
+    font-size: 3rem;
+    line-height: 1.35;
+}
+
+.page-content-container p,
+.post p {
+    font-size: 1.25rem;
+    line-height: 2.0;
+}
+
+.page-content-container h2,
+.post h2 {
+    font-size: 2.0rem;
+    line-height: 1.6;
+}
+
+.page-content-container h3,
+.post h3 {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+
+.post-preview {
+    display: flex;
+    flex-direction: row;
+    max-width: 475px;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.post-metadata-container {
+    background-color: var(--white);
+    padding: var(--padding-2x);
+}
+
+.flexible {
+    flex-grow: 1;
+    background-color: var(--white);
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--main-text);
+    padding: 0 var(--spacing-4x);
+}
+
+.post-card-metadata {
+    font-size: 0.95rem;
+    padding: var(--spacing-4x);
+    background-color: var(--background);
+    color: var(--secondary-text);
+    padding-bottom: 0;
+}
+
+.post-card-summary {
+    font-size: 0.95rem;
+    padding: var(--spacing-1x) var(--spacing-4x);
+    color: var(--secondary-text);
+    background-color: var(--background);
+}
+
+.post-info h2 {
+    font-size: 1.4rem;
+}
+
+.post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-4x);
+    padding: 0.5rem 0;
+}
+
+a.post-category {
+    color: var(--post-category);
+    font-size: var(--small-text);
+    border-radius: var(--border-radius);
+    margin-right: var(--padding-xs);
+    letter-spacing: 1px;
+    display: block;
+}
+
+.page-name {
+    font-size: var(--text-2x);
+}
+
+.category {
+    color: var(--main-text);
+    padding: var(--padding-2x) 0;
+    margin: var(--margin-2x) 0;
+}
+
+.responsive-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+figure.md-local-image img,
+.md-image {
+    object-fit: contain;
+    max-width: 100%;
+    aspect-ratio: 9/7;
+    height: auto;
+}
+
+.cover-image-container {
+    display: flex;
+    /* This is the proportion from a image that's 1200x630 reduced to 500x(n). Set manually to prevent cumulative layout shift*/
+    min-height: 273.467px;
+}
+
+.btn-info {
+    color: var(--main-text);
+    background-color: var(--background);
+    padding: var(--padding-1x) var(--padding-2x);
+    border: 1px solid var(--main-text);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--text-1x);
+}
+
+::selection,
+::-moz-selection {
+    color: var(--dark);
+    background: var(--yellow);
+}
+
+.nav-menu-ul {
+    display: flex;
+    gap: var(--spacing-8x);
+    list-style: none;
+    margin: 0;
+}
+
+.mermaid {
+    background-color: var(--white);
+}
+
+.credits-text {
+    opacity: 0.6;
+    font-size: 0.7rem;
+}
+
+.ai-button {
+    background-color: transparent;
+    color: var(--main-text);
+    font-size: var(--text-1x);
+    border: 1px solid var(--main-text);
+    border-radius: var(--border-radius);
+    padding: 0.2rem 1rem;
+}

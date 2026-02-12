@@ -1,0 +1,24 @@
+{{ with .Params.authors }}
+<section class="author-info">
+    <div class="author-container">
+        {{- range . }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        {{ if .Params.photo }}
+        {{ $image := resources.GetRemote .Params.photo }}
+        {{ $image :=$image.Process "resize 120x" }}
+        <figure>
+            <img class="author-picture" loading="lazy" src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Params.name }}" />
+            <figcaption>
+            </figcaption>
+        </figure>
+        <div class="author-name">
+            {{ .Params.name }}
+        </div>
+        <div class="author-summary">{{ .Params.summary }}</div>
+        <a rel="author" class="author-read-more" aria-label="{{.Params.name}}" href="{{ .Permalink }}">{{ i18n "readMore"}}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}

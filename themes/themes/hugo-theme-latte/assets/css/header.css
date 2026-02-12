@@ -1,0 +1,84 @@
+#header {
+    position: relative;
+    max-height: 180px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--transparent-sidebar);
+    padding: var(--padding-1x);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    max-height: 75px;
+}
+
+.nav-menu {
+    margin-left: auto;
+}
+
+.nav-menu-sidebar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: var(--margin-2x);
+}
+
+.nav-burger {
+    visibility: hidden;
+}
+
+div.nav-link,
+a.nav-link {
+    padding: var(--padding-1x);
+}
+
+a.nav-link {
+    font-size: 1.1rem;
+}
+
+
+
+.burger-line {
+    width: 32px;
+    border-radius: var(--border-radius);
+    background-color: var(--main-text);
+    height: 2px;
+    margin: var(--padding-xs);
+}
+
+.site-name {
+    font-size: var(--text-3x);
+    margin-bottom: var(--spacing-8x);
+    line-height: 1;
+}
+
+.site-description {
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-size: 1.4rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+#site-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 var(--container-margin);
+    margin-bottom: var(--margin-3x);
+}
+
+.social-links {
+    margin: var(--spacing-4x) 0;
+    display: flex;
+    gap: var(--spacing-8x);
+    justify-content: center;
+}
+
+.search-icon {
+    /* This is just a temporary patch that aligns the search icon with the rest of icons */
+    transform: translateY(5px);
+}

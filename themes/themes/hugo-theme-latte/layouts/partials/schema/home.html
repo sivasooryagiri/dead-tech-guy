@@ -1,0 +1,12 @@
+{{/* This schema has a double dict template "context" related to . and "paginator" related to paginator object */}}
+{{ $noPages := .paginator.Pages | len }}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@graph": [
+              {{ partial "schema/website.html" .context | safeJS }},
+              {{ partial "schema/organization.html" .context | safeJS }},
+              {{ partial "schema/blogWithBlogPost.html" (dict "context" .context "paginator" .paginator ) | safeJS }}
+        ]
+    }
+</script>

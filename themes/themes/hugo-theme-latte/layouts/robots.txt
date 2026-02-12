@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*/tags/
+Disallow: /*/search/
+Disallow: /*.json$
+
+Sitemap: {{print .Site.BaseURL "sitemap.xml"}}

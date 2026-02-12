@@ -1,0 +1,18 @@
+.scroll-up {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    color: var(--button-text);
+    border-radius: var(--border-radius);
+    padding: var(--padding-1x);
+    transform: translateY(0);
+    transition: var(--transition);
+    z-index: 4;
+    cursor: pointer;
+}
+
+
+.scroll-up.hidden {
+    visibility: hidden;
+    transform: translateY(20px);
+}

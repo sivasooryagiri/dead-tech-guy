@@ -1,0 +1,267 @@
+[subscribe]
+other = "Quiero suscribirme"
+
+[next]
+other = "Siguiente"
+
+[previous]
+other = "Previo"
+
+[readingTime]
+one = 'Un minuto de lectura'
+other = "Tiempo de lectura {{ .Count }} minutos"
+
+[tableOfContents]
+other = "Índice del contenido"
+
+[relatedContent]
+other = "Otros posts recomendados"
+
+[searchNotFound]
+other = "No se encontraron resultados"
+
+[searchInputPlaceholder]
+other = "..."
+
+[loadingSearchPlaceholder]
+other = "Cargando"
+
+[author]
+other = "por {{ . }}"
+
+[requiredField]
+other = "Campo requerido"
+
+[name]
+other = "Tu nombre"
+
+[email]
+other = "Email"
+
+[namePlaceholder]
+other = "Tu nombre"
+
+[emailPlaceholder]
+other = "Tu email"
+
+[notFound404Title]
+other = "No hay nada aquí"
+
+[notFound404Description]
+other = "Quizás te gustaría leer mis posts más recientes"
+
+[notFound404Button]
+other = "Ir a posts recientes"
+
+[readMore]
+other = "Leer más"
+
+[seeMore]
+other = "Ver más"
+
+[articles]
+other = "Artículos"
+
+[authors]
+other = "Autores"
+
+[bio]
+other = "Bio"
+
+[close]
+other = "Cerrar"
+
+[affiliateLinks]
+other = "Enlaces de afiliados"
+
+[categoryAriaLabel]
+other = "Enlace hacia la categoria: {{ .category }}"
+
+[languageDropdown]
+other = "Idiomas"
+
+[i18nTranslations]
+other = "Traducciones"
+
+[ariaLabelAuthor]
+other = "página del autor"
+
+[categoryList]
+other = "Lista de categorias"
+
+[translatedPost]
+other = "Translated version: "
+
+[nextEntry]
+other = "Siguiente post"
+
+[previousEntry]
+other = "Post anterior"
+
+[nextAndPreviuosLinks]
+other = "Enlaces a la entrada previa y siguiente"
+
+[postImage]
+other = "Imagen principal del post"
+
+[search]
+other = "Buscar"
+
+[switchTheme]
+other = "Alternar el tema de la interfaz"
+
+[navbar]
+other = "Barra de navegación"
+
+[searchSite]
+other = "Buscar en el sitio web"
+
+[socialMediaLinks]
+other = "Enlaces a redes sociales"
+
+[socialMediaLink]
+other = "Enlace hacia: {{.name}}"
+
+[asideMenu]
+other = "Menu lateral"
+
+[closeSideMenu]
+other = "Cerrar menú lateral"
+
+[footerLinks]
+other = "Enlaces del footer"
+
+[postMetadata]
+other = "Metadata del post"
+
+[siteInfo]
+other = "Información del sitio"
+
+[searchResults]
+other = "Resultados de búsqueda"
+
+[mainMenu]
+other = "Menú principal"
+
+[languageName]
+other = "Idioma: {{.language}}"
+
+[scrollToTop]
+other = "Hacer scroll hasta la parte superior"
+
+[closeSubscribeForm]
+other = "Cerrar formulario de suscripción"
+
+[draft]
+other = "Borrador"
+
+[categories]
+other = "Categorias"
+
+[categoryLinkAria]
+other = "Enlace a la categoria de {{.category}}"
+
+[categoryListAria]
+other = "Enlace a la lista de categorias"
+
+[affiliateLink]
+other = "Enlace de afiliado"
+
+[rssCategoryDesc]
+other = "RSS feed del contenido reciente sobre {{.category}} en {{.site}}"
+
+[rssSubscribe]
+other = "Suscríbete por RSS a posts acerca de {{.category}}"
+
+[rssFeedLink]
+other = "Enlace al feed RSS"
+
+[wordCount]
+other = "Conteo de palabras: {{.number}}"
+
+[keyword]
+other = "Conteo de keyword: {{.keyword}}"
+
+[ratioKeyword]
+other = "Keyword density: {{.ratio}} %"
+
+[noKeyword]
+other = "No se definió ningún parámetro keyword en el frontmatter YAML"
+
+[keywordInTitle]
+other = "Keyword presente en el título: {{.contains}}"
+
+[keywordInLink]
+other = "Keyword presente en el enlace: {{.contains}}"
+
+[keywordInSubtitles]
+other = "Ocurrencias de la keyword en los subtitulos: {{.contains}}"
+
+[seoDataDisclaimer]
+other = "Esta información no se mostrará en un entorno de producción"
+
+[seoDescriptiption]
+other = "Descripción SEO: {{.description}}"
+
+[noSeoDescription]
+other = "No se especificó ninguna descripción SEO en el frontmatter, añade una propiedad description"
+
+[sponsored]
+other = "Abajo hay un enlace de afiliado"
+
+[ad]
+other = "Abajo hay un enlace de afiliado"
+
+[ReadibilityScore]
+other = "Score de Flesh Kincaid:"
+
+["VeryEasyToRead"]
+other = "Muy sencillo de leer"
+
+["EasyToRead"]
+other = "Fácil de leer"
+
+["FairlyEasyToRead"]
+other = "Relativamente fácil de leer"
+
+["StandardPlainEnglish"]
+other = "Dificultad de lectura estándar"
+
+["FairlyDifficultToRead"]
+other = "Relativamente difícil de leer"
+
+["DifficultToRead"]
+other = "Difícil de leer"
+
+["VeryDifficultToRead"]
+other = "Muy difícil de leer"
+
+["keywordTitle"]
+other = "Keyword: {{.keyword}}"
+
+["titleLength"]
+other = "Longitud del título: {{.number}} (Longitud ideal entre 50 y 60)"
+
+["descriptionLength"]
+other = "Longitud de la descripción: {{.number}}"
+
+["keywordDistBad"]
+other = "Calificación de distribución de Keyword: {{.score}}%. Considera distribuir mejor las keywords a través del contenido"
+
+["keywordDistMedium"]
+other = "Calificación de distribución de Keyword: {{.score}}%. Añade las keywords a las secciones donde faltan"
+
+["keywordDistGood"]
+other = "Calificación de distribución de Keyword: {{.score}}%. Excelente distribución de keywords"
+
+["longParagraphs"]
+other = "Este contenido posee {{.counter}} párrafos largos (100+ palabras). Considera dividirlos para una mejor legibilidad. El párrafo es: {{ .paragraph  }}"
+
+["goodLengthParagraph"]
+other = "La longitud de los párrafos es buena para la legibilidad"
+
+[summarizeBtn]
+other = "Resumir con AI"
+
+[AISummarizeContext]
+other = "Resume el siguiente contenido a un solo párrafo resaltando la idea general"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="{{ .Site.Language.Lang }}">
+{{- partial "head.html" . -}}
+
+<body id="hamburger-grid" hx-boost="true" hx-ext="head-support">
+    {{ if and (.Site.Params.GoogleTagManager) (hugo.IsProduction) }}
+    {{- partial "googleTagManagerNoScript.html" . -}}
+    {{ end }}
+    {{- partial "nav.html" . -}}
+    <main id="main">
+        <div class="main">
+            {{- block "main" . -}}{{ end }}
+        </div>
+    </main>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

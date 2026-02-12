@@ -1,0 +1,16 @@
+{{ $affiliateLink := .Site.Params.latte.prePostAffiliateLink }}
+{{ $affiliateText := .Site.Params.latte.prePostAffiliateText }}
+{{ $affiliateTitle := .Site.Params.latte.prePostAffiliateTitle }}
+{{ $affiliateDescription := .Site.Params.latte.prePostAffiliateDescription }}
+
+
+{{ with $affiliateLink }}
+<div class="prePostAffiliate">
+    <small class="sponsored">{{i18n "sponsored"}}</small>
+    <div class="h1">{{ $affiliateTitle }}</div>
+    <p>{{ $affiliateDescription }}</p>
+    <a target="_blank" aria-label={{i18n "affiliateLink"}} rel="sponsored" href={{ $affiliateLink }}>
+        <button class="prePostAffiliateButton shake">{{$affiliateText}}</button>
+    </a>
+</div>
+{{ end }}

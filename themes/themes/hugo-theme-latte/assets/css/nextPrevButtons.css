@@ -1,0 +1,23 @@
+.next-prev-links {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: var(--spacing-16x) 0;
+}
+
+.next-prev {
+    margin-bottom: var(--margin-2x);
+    color: var(--main-text);
+    cursor: pointer;
+}
+
+.previous-link {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.next-link {
+    text-align: left;
+    flex-grow: 1;
+}

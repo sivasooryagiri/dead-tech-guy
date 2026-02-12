@@ -1,0 +1,25 @@
+#breadcrumbs {
+    font-size: 0.9rem;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+
+
+.breadcrumbs-item::before {
+    content: ">";
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+.breadcrumbs-first::before {
+    content: "";
+
+}
+
+.breadcrumbs-last {
+    opacity: 0.8;
+}

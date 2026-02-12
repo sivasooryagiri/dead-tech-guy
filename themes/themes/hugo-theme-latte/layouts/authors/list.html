@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ partial "schema/author.html" . }}
+<div class="page-content-container">
+  {{ $image := resources.GetRemote .Params.photo }}
+  {{ $image :=$image.Process "resize 120x" }}
+  <article>
+    <div class="author-intro">
+      <h1>{{ .Params.name }}</h1>
+      <img class="author-picture" src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+        alt="{{.Params.name}}" />
+    </div>
+    <div class="author-summary">
+      <div>
+        {{.Params.summary}}
+      </div>
+    </div>
+    <div class="author-social">
+
+      {{ with .Params.linkedin }}
+      <a href="https://linkedin.com/in/{{ . }}">{{ partial "icon.html" "linkedin-in" }}</a>
+      {{ end }}
+
+      {{ with .Params.twitter }}
+      <a href="https://twitter.com/{{ . }}">{{ partial "icon.html" "twitter" }}</a>
+      {{ end }}
+
+      {{ with .Params.threads }}
+      <a href="https://threads.net/{{ . }}">{{ partial "icon.html" "threads" }}</a>
+      {{ end }}
+
+      {{ with .Params.instagram }}
+      <a href="https://instagram.com/{{ . }}">{{ partial "icon.html" "instagram" }}</a>
+      {{ end }}
+
+      {{ with .Params.website }}
+      <a href="{{.}}">{{ partial "icon.html" "message" }}</a>
+      {{ end }}
+
+      {{ with .Params.github }}
+      <a href="https://github.com/{{.}}">{{ partial "icon.html" "github-alt" }}</a>
+      {{ end }}
+
+      {{ with .Params.codewars }}
+      <a href="https://codewars.com/users/{{ . }}">{{ partial "icon.html" "codewars" }}</a>
+      {{ end }}
+
+    </div>
+
+    {{ .Content }}
+
+  </article>
+</div>
+{{ end }}

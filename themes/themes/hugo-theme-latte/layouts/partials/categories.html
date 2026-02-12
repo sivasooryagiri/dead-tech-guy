@@ -1,0 +1,7 @@
+<div class="post-categories">
+    {{ range .Params.categories }}
+    <a class="post-category"
+        aria-label="{{ i18n "categoryAriaLabel" (dict "category" (. | humanize)) }}" 
+        href="{{ . | urlize | absLangURL }}/">{{ . | humanize }}</a>
+    {{ end }}
+</div>

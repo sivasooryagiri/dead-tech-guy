@@ -1,0 +1,4 @@
+<!-- Get all css files inside assets/css/ no subdirectories, concat, minify and fingerptin  -->
+{{ $style := resources.Match "css/*.css" | resources.Concat "css/style.bundle.css" | minify | fingerprint }}
+
+<link async rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">

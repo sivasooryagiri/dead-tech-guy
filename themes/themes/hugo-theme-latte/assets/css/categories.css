@@ -1,0 +1,39 @@
+.categoryContainer {
+    margin: var(--margin-1x) 0;
+    list-style: none;
+}
+
+.categoryItem,
+.categoryItem:visited {
+    color: var(--blue);
+    letter-spacing: 3px;
+    text-wrap: nowrap;
+}
+
+.category-container {
+    margin: 0 var(--container-margin);
+    width: 100%;
+    padding: 0;
+}
+
+.dropdown-categories {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.dropdown-category-item {
+    list-style: none;
+    margin: 0;
+}
+
+.category-list {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--padding-2x);
+}

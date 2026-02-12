@@ -1,0 +1,244 @@
+:root {
+    --white: #FFF;
+    --title: #161620;
+    --dark: #111;
+    --blue: #326DF5;
+    --pale-blue: #3398FF;
+    --green: #1fc198;
+    --red: #e71a49;
+    --orange: #e7521a;
+    --author-info: #f3f7ff;
+    --yellow: #f9f871;
+    --background: var(--white);
+    --transparent-sidebar: rgba(255, 255, 255, 0.9);
+    --i18n-button: var(--white);
+    --post-preview-background: #FFFFFFbb;
+    --main-text: #3F424A;
+    --secondary-text: #6a6a6a;
+    --credits: #adadad;
+    --input-border: var(--credits);
+    --footer: var(--background);
+    --post-category: var(--blue);
+    --button: var(--blue);
+    --button-text: var(--background);
+    --padding-1-5rem: 1.5rem;
+    --padding-3x: 3rem;
+    --padding-2x: 2rem;
+    --padding-1x: 1rem;
+    --padding-xs: 0.5rem;
+    --margin-1x: 1rem;
+    --margin-2x: 2rem;
+    --margin-3x: 3rem;
+    --border-radius: 4px;
+    --border-radius-2x: 16px;
+    --text-2x: 1.5rem;
+    --text-3x: 3rem;
+    --text-1x: 1rem;
+    --small-text: 0.95rem;
+    --icon-size: 1.5rem;
+    --icon-size-sm: 1rem;
+    --max-char-width: 64ch;
+    --spacing-1x: 4px;
+    --spacing-2x: 8px;
+    --spacing-3x: 12px;
+    --spacing-4x: 16px;
+    --spacing-8x: 32px;
+    --spacing-16x: 64px;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --container-margin: 8rem;
+}
+
+[data-theme="dark"] {
+    --white: #FFF;
+    --dark: #111;
+    --blue: #2ebbcb;
+    --author-info: #0b3049;
+    --red: #BF311A;
+    --yellow: #f9f871;
+    --orange: #f9b471;
+    --green: #1dac85;
+    --title: var(--white);
+    --background: #07263b;
+    --transparent-sidebar: rgba(7, 38, 59, 0.8);
+    --i18n-button: var(--sidebar-transparent);
+    --post-preview-background: #181818bb;
+    --main-text: var(--white);
+    --secondary-text: #c0c0c0;
+    --credits: #adadad;
+    --input-border: var(--credits);
+    --footer: var(--background);
+    --post-category: var(--blue);
+    --button: #2bcecf;
+    --button-text: var(--background);
+    --padding-1-5rem: 1.5rem;
+    --padding-2x: 2rem;
+    --padding-1x: 1rem;
+    --padding-xs: 0.5rem;
+    --margin-1x: 1rem;
+    --margin-2x: 2rem;
+    --border-radius: 4px;
+    --border-radius-2x: 16px;
+    --text-2x: 1.5rem;
+    --text-3x: 3rem;
+    --small-text: 0.95rem;
+    --icon-size: 1.5rem;
+    --icon-size-sm: 1rem;
+    --max-char-width: 64ch;
+    --spacing-1x: 4px;
+    --spacing-2x: 8px;
+    --spacing-3x: 12px;
+    --spacing-4x: 16px;
+    --spacing-8x: 32px;
+    --spacing-16x: 64px;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --container-margin: 8rem;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    line-height: 2.0;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    margin: var(--margin-2x) 0;
+    /* this prevents posts with long urls and codes to overflow article div */
+    word-break: break-word;
+}
+
+pre {
+    overflow-x: auto;
+    padding: var(--padding-2x) 0 var(--padding-2x) var(--padding-2x);
+    font-size: var(--small-text);
+    /* prevent code from overflowing in small screens in Firefox */
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    /* For chrome */
+    word-wrap: break-word;
+    border-radius: var(--border-radius-2x);
+    margin-bottom: var(--margin-2x);
+}
+
+input:focus {
+    outline: 2px solid var(--blue);
+}
+
+button {
+    border: 0;
+}
+
+* {
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2 {
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+h1,
+.h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: var(--spacing-4x) 0;
+}
+
+h2,
+.h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.10rem;
+}
+
+.md-local-image>figcaption>p {
+    font-size: 0.95rem;
+}
+
+h2,
+h3,
+h4 {
+    margin: var(--spacing-3x) 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    color: var(--dark);
+}
+
+table thead tr {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: var(--white);
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: var(--white);
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--green);
+}
+
+#hamburger-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--main-text);
+}
+
+.content blockquote p {
+    font-size: 0.97rem;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+}

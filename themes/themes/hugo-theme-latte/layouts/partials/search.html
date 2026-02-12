@@ -1,0 +1,12 @@
+<div class="search-content">
+    {{ .Content }}
+    <div id="search-loader" class="loader">
+        <search class="search">
+            <form role="search" aria-label="{{ i18n "searchSite"}}">
+                <input id="search-input" disabled type="search" placeholder="{{i18n "loadingSearchPlaceholder"}}" name="q">
+            </form>
+        </search>
+    </div>
+    <section aria-label="{{i18n "searchResults"}}" id="search-results" class="search-results"></section>
+</div>
+

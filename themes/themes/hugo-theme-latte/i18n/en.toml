@@ -1,0 +1,267 @@
+[subscribe]
+other = "I want to subscribe"
+
+[next]
+other = "Next"
+
+[previous]
+other = "Previous"
+
+[readingTime]
+one = 'One minute reading time'
+other = "Reading time: {{ .Count }} minutes"
+
+[tableOfContents]
+other = "Table of contents"
+
+[relatedContent]
+other = "Related posts"
+
+[searchNotFound]
+other = "No results"
+
+[searchInputPlaceholder]
+other = "..."
+
+[loadingSearchPlaceholder]
+other = "Loading search"
+
+[author]
+other = "by {{ . }}"
+
+[requiredField]
+other = "Required field"
+
+[name]
+other = "Your name"
+
+[email]
+other = "Email"
+
+[namePlaceholder]
+other = "Your name"
+
+[emailPlaceholder]
+other = "Your email"
+
+[notFound404Title]
+other = "Not found"
+
+[notFound404Description]
+other = "We didn't found anything"
+
+[notFound404Button]
+other = "Return to home"
+
+[readMore]
+other = "Read more"
+
+[seeMore]
+other = "See more"
+
+[articles]
+other = "Articles"
+
+[authors]
+other = "Authors"
+
+[bio]
+other = "Bio"
+
+[close]
+other = "Close"
+
+[affiliateLinks]
+other = "Affiliate links"
+
+[categoryAriaLabel]
+other = "Category link to posts about: {{ .category }}"
+
+[languageDropdown]
+other = "Languages"
+
+[i18nTranslations]
+other = "Translations"
+
+[ariaLabelAuthor]
+other = "author's page"
+
+[categoryList]
+other = "Category list"
+
+[translatedPost]
+other = "Translated version: "
+
+[nextEntry]
+other = "Next post"
+
+[previousEntry]
+other = "Previous post"
+
+[nextAndPreviuosLinks]
+other = "Next and previous links"
+
+[postImage]
+other = "Post main image"
+
+[search]
+other = "Search"
+
+[switchTheme]
+other = "Toggle theme"
+
+[navbar]
+other = "Navigation bar"
+
+[searchSite]
+other = "Search on website"
+
+[socialMediaLinks]
+other = "Social media links"
+
+[socialMediaLink]
+other = "{{.name}}'s link"
+
+[asideMenu]
+other = "Side menu"
+
+[closeSideMenu]
+other = "Close side menu"
+
+[footerLinks]
+other = "Footer's links"
+
+[postMetadata]
+other = "Post's metadata"
+
+[siteInfo]
+other = "Site's info"
+
+[searchResults]
+other = "Search results"
+
+[mainMenu]
+other = "Main menu"
+
+[languageName]
+other = "Language: {{.language}}"
+
+[scrollToTop]
+other = "Scroll to top"
+
+[closeSubscribeForm]
+other = "Close subscribe form"
+
+[draft]
+other = "Draft"
+
+[categories]
+other = "Categories"
+
+[categoryLinkAria]
+other = "Link to {{.category}} category"
+
+[categoryListAria]
+other = "Link to category list"
+
+[affiliateLink]
+other = "Affiliate link"
+
+[rssCategoryDesc]
+other = "Recent content about {{.category}} on {{.site}} RSS feed"
+
+[rssSubscribe]
+other = "Subscribe via RSS to {{.category}} posts"
+
+[rssFeedLink]
+other = "RSS feed link"
+
+[wordCount]
+other = "Word count: {{.number}}"
+
+[keyword]
+other = "Keyword count: {{.keyword}}"
+
+[ratioKeyword]
+other = "Keyword density: {{.ratio}} %"
+
+[noKeyword]
+other = "No keyword parameter was defined in the frontmatter, add a keyword property"
+
+[keywordInTitle]
+other = "Keyword present in title: {{.contains}}"
+
+[keywordInLink]
+other = "Keyword present in link: {{.contains}}"
+
+[keywordInSubtitles]
+other = "Keyword ocurrences in subtitles: {{.contains}}"
+
+[seoDataDisclaimer]
+other = "This data won't be shown in a production environment"
+
+[seoDescriptiption]
+other = "SEO description: {{.description}}"
+
+[noSeoDescription]
+other = "No SEO description was specified in the frontmatter, add a description property"
+
+[sponsored]
+other = "Ad"
+
+[ad]
+other = "Ad"
+
+[ReadibilityScore]
+other = "Flesh Kincaid Score:"
+
+["VeryEasyToRead"]
+other = "Very easy to read"
+
+["EasyToRead"]
+other = "Easy to read"
+
+["FairlyEasyToRead"]
+other = "Fairly easy to read"
+
+["StandardPlainEnglish"]
+other = "Standard plain English"
+
+["FairlyDifficultToRead"]
+other = "Fairly difficult to read"
+
+["DifficultToRead"]
+other = "Difficult to read"
+
+["VeryDifficultToRead"]
+other = "Very difficult to read"
+
+["keywordTitle"]
+other = "Keyword: {{.keyword}}"
+
+["titleLength"]
+other = "Title length: {{.number}} (Ideal length between 50 and 60)"
+
+["descriptionLength"]
+other = "Description length: {{.number}}"
+
+["keywordDistBad"]
+other = "Keyword Distribution Score: {{.score}}. Consider distributing keywords more evenly throughout the content"
+
+["keywordDistMedium"]
+other = "Keyword Distribution Score: {{.score}}. Add keywords to sections where they're currently missing"
+
+["keywordDistGood"]
+other = "Keyword Distribution Score: {{.score}}. Good keyword distribution detected"
+
+["longParagraphs"]
+other = " This content contains {{.counter}} long paragraphs (100+ words). Consider breaking them up for better readability. Paragraph is: {{ .paragraph  }}"
+
+["goodLengthParagraph"]
+other = "Paragraph length looks good for readability."
+
+[summarizeBtn]
+other = "Summarize with AI"
+
+[AISummarizeContext]
+other = "Summarize the following post to a single paragraph"

@@ -1,0 +1,29 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+description = ""
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "cover-image",
+  "table-of-contents",
+  "social-icons",
+  "social-icons",
+  "minified-assets",
+  "theme-toggle",
+  "scroll-to-top",
+  "search",
+]
+homepage = "https://github.com/EduardoZepeda/hugo-theme-latte"
+license = "MIT"
+licenselink = "https://github.com/EduardoZepeda/hugo-theme-latte/blob/master/LICENSE"
+name = "Hugo Theme Latte"
+tags = ["blog", "responsive", "light", "dark", "dark mode", "light mode", "mailchimp", "search", "related content"]
+
+demosite = "https://coffeebytes.dev"
+min_version = "0.84.0"
+
+[author]
+homepage = "https://zeedu.dev"
+name = "Eduardo Zepeda"

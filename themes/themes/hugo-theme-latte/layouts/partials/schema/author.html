@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+{{/* the sameAs section lacks a way to detect the last element and omit the corresponding comma */}}
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        "@type": "ProfilePage",
+        "dateCreated": {{.Params.dateCreated}},
+        "dateModified": {{.Params.dateCreated}},
+        "isPartOf": {
+            "@id": {{ printf "%s#webpage" .Permalink }}
+        },
+        "mainEntity": {
+            "@id": {{ printf "%s#author" .Permalink }}
+        }
+    },
+    {{ partial "schema/webpage.html" . | safeJS }},
+    {{ partial "schema/website.html" . | safeJS }},
+    {{ partial "schema/organization.html" . | safeJS }},
+    {{ partial "schema/person.html" . | safeJS }}
+    ]
+}
+</script>

@@ -1,0 +1,19 @@
+<!-- loading mermaid js for mermaid diagrams check https://mermaid.js.org/#/ -->
+{{ if .Page.Store.Get "hasMermaid" }}
+    <!-- mermaid js needs to be initialized before using it init will render all the diagrams -->
+    <!-- onload will make sure initialization occurs only after the library has been downloaded -->
+    <!-- bind diagram parsing to turbolinks:load event -->
+    <script defer onload="mermaid.registerIconPacks([
+  {
+    name: 'logos',
+    loader: () =>
+      fetch('https://unpkg.com/@iconify-json/logos@1/icons.json').then((res) => res.json()),
+  },
+]);mermaid.initialize({theme: 'forest'});mermaid?.init();document.addEventListener('htmx:historyRestore', function(){mermaid.registerIconPacks([
+  {
+    name: 'logos',
+    loader: () =>
+      fetch('https://unpkg.com/@iconify-json/logos@1/icons.json').then((res) => res.json()),
+  },
+]);mermaid.initialize({theme: 'forest'});mermaid?.init();});" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+{{ end }}

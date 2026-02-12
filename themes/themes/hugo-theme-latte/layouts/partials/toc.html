@@ -1,0 +1,7 @@
+{{ if and (.Site.Params.latte.toc) (gt .WordCount 300 ) }}
+<details>
+    <summary>{{ i18n "tableOfContents"}}</summary>
+    <p>{{.Title}}</p>
+    <div class="summary">{{.TableOfContents }}</div>
+</details>
+{{ end }}
