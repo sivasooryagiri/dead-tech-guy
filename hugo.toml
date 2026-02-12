@@ -2,7 +2,7 @@
 baseURL = 'https://deadtechguy.fun/'
 languageCode = 'en-us'
 title = 'Dead Tech Guy'
-theme = "nightfall"
+theme = "hugo-theme-latte"
 
 [params]
 user = "hungry"
@@ -12,9 +12,9 @@ displayDateFormat = "02.01.2006"
 
 
 footerHtml = """
-<a href="https://twitter.com/YOUR_USERNAME" class="footerLink" target="_blank">X / Twitter</a>
+<a href="https://x.com/dtg_fun" class="footerLink" target="_blank">X / Twitter</a>
 &nbsp;|&nbsp;
-<a href="https://youtube.com/@YOUR_CHANNEL" class="footerLink" target="_blank">YouTube</a>
+<a href="https://www.youtube.com/@DeadTechGuy" class="footerLink" target="_blank">YouTube</a>
 """
 
 
@@ -51,7 +51,7 @@ footerHtml = """
 
 [[params.social]]
 key = 0
-name = "Tech Reviews"
+name = "TechReviews"
 url = "/tech-reviews/"
 
 [[params.social]]
